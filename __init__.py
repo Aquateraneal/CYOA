@@ -194,10 +194,17 @@ def debug_console(password: str = "") -> bool:
 
 
 def __main__():
-    with open("CYOAs/ONE.toml", "rb") as th:
-        toml_data: CyoaTOML = toml.load(th)  # pyright: ignore[reportAssignmentType]
-    with open(f"CYOAs/{toml_data['file']}") as jh:
-        json_data: dict[str, NodeData] = json.load(jh)  # pyright: ignore[reportAny]
+    while True:
+        try:
+            packname = input("Pack name (e.g. ONE): ")
+            with open(f"CYOAs/{packname}.toml", "rb") as th:
+                toml_data: CyoaTOML = toml.load(th)  # pyright: ignore[reportAssignmentType]
+            with open(f"CYOAs/{toml_data['file']}") as jh:
+                json_data: dict[str, NodeData] = json.load(jh)  # pyright: ignore[reportAny]
+        except FileNotFoundError:
+            print("Please try again")
+        else:
+            break
     nodes = parse_node_data(json_data)
 
     print(toml_data["info"].get("title", toml_data["info"]["name"]))
