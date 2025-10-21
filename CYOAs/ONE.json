@@ -1,0 +1,18 @@
+{
+    "start": {
+        "choices": [{ "node": "lose" }, { "node": "win" }],
+        "default_fromtext": "One will return",
+        "title": "One is in the darkness"
+    },
+
+    "lose": {
+        "choices": [{ "node": "start" }],
+        "default_fromtext": "One shall give in",
+        "title": "One becomes zero"
+    },
+    "win": {
+        "choices": [{ "node": "start" }],
+        "default_fromtext": "One shall escape",
+        "title": "One has won"
+    }
+}

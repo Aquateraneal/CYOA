@@ -1,0 +1,9 @@
+file = "ONE.json"
+
+[info]
+name = "ØNE"
+title = "=== ØNE ==="
+
+[runtime]
+exit_input = "qq"
+start_node = "start"
