@@ -172,8 +172,8 @@ def parse_node_data(json_data: dict[str, NodeData]) -> dict[str, Node]:
 def debug_console(password: str = "") -> bool:
     while True:
         if (
-            hashlib.blake2b(bytes(password, "utf-8")).hexdigest()
-            == "e076c9a367d88efa528e440b95c665c5b74a8929da4e8ab515bd53d2cace06f7d16fc59c58d603a31d02852153a14bd345e1911c015d11fe463c9c0dac98f7ad"
+            hashlib.sha3_512(bytes(password, "utf-8")).hexdigest()
+            == "c8db9c143a167043713faf016febd72a9e9f20637175d6faff22ef057440e8113bbc0999bbccd2b8e56a730ab249cb21721e65026810c747edd43ae5b37b078d"
         ):
             break
 
