@@ -1,7 +1,7 @@
 {
     "start": {
-        "choices": [{ "node": "void000", "text": "One will enter the void" }],
-        "default_fromtext": "One will return",
+        "choices": [{ "node": "void000", "text": "One shall enter the void" }],
+        "default_fromtext": "One shall return",
         "title": "One is in the darkness"
     },
 
