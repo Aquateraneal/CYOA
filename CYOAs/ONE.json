@@ -1,8 +1,252 @@
 {
     "start": {
-        "choices": [{ "node": "lose" }, { "node": "win" }],
+        "choices": [{ "node": "void000", "text": "One will enter the void" }],
         "default_fromtext": "One will return",
         "title": "One is in the darkness"
+    },
+
+    "void---": {
+        "choices": [
+            { "node": "void--0", "text": "One shall move upward" },
+            { "node": "void-0-", "text": "One shall move northward" },
+            { "node": "void0--", "text": "One shall move eastward" }
+        ],
+        "title": "One is in the lower-southwestern heptacosant."
+    },
+    "void--0": {
+        "choices": [
+            { "node": "void--+", "text": "One shall move upward" },
+            { "node": "void---", "text": "One shall move downward" },
+            { "node": "void-00", "text": "One shall move northward" },
+            { "node": "void0-0", "text": "One shall move eastward" }
+        ],
+        "title": "One is in the southwestern heptacosant."
+    },
+    "void--+": {
+        "choices": [
+            { "node": "void--0", "text": "One shall move downward" },
+            { "node": "void-0+", "text": "One shall move northward" },
+            { "node": "void0-+", "text": "One shall move eastward" }
+        ],
+        "title": "One is in the upper-southwestern heptacosant."
+    },
+    "void-0-": {
+        "choices": [
+            { "node": "void-00", "text": "One shall move upward" },
+            { "node": "void-+-", "text": "One shall move northward" },
+            { "node": "void---", "text": "One shall move southward" },
+            { "node": "void00-", "text": "One shall move eastward" }
+        ],
+        "title": "One is in the lower-western heptacosant."
+    },
+    "void-00": {
+        "choices": [
+            { "node": "void-0+", "text": "One shall move upward" },
+            { "node": "void-0-", "text": "One shall move downward" },
+            { "node": "void-+0", "text": "One shall move northward" },
+            { "node": "void--0", "text": "One shall move southward" },
+            { "node": "void000", "text": "One shall move eastward" }
+        ],
+        "title": "One is in the western heptacosant."
+    },
+    "void-0+": {
+        "choices": [
+            { "node": "void-00", "text": "One shall move downward" },
+            { "node": "void-++", "text": "One shall move northward" },
+            { "node": "void--+", "text": "One shall move southward" },
+            { "node": "void00+", "text": "One shall move eastward" }
+        ],
+        "title": "One is in the upper-western heptacosant."
+    },
+    "void-+-": {
+        "choices": [
+            { "node": "void-+0", "text": "One shall move upward" },
+            { "node": "void-0-", "text": "One shall move southward" },
+            { "node": "void0+-", "text": "One shall move eastward" }
+        ],
+        "title": "One is in the lower-northwestern heptacosant."
+    },
+    "void-+0": {
+        "choices": [
+            { "node": "void-+-", "text": "One shall move upward" },
+            { "node": "void-++", "text": "One shall move downward" },
+            { "node": "void-00", "text": "One shall move southward" },
+            { "node": "void0+0", "text": "One shall move eastward" }
+        ],
+        "title": "One is in the northwestern heptacosant."
+    },
+    "void-++": {
+        "choices": [
+            { "node": "void-+0", "text": "One shall move downward" },
+            { "node": "void-0+", "text": "One shall move southward" },
+            { "node": "void0++", "text": "One shall move eastward" }
+        ],
+        "title": "One is in the upper-northwestern heptacosant."
+    },
+    "void0--": {
+        "choices": [
+            { "node": "void0-0", "text": "One shall move upward" },
+            { "node": "void00-", "text": "One shall move northward" },
+            { "node": "void+--", "text": "One shall move eastward" },
+            { "node": "void---", "text": "One shall move westward" }
+        ],
+        "title": "One is in the lower-southern heptacosant."
+    },
+    "void0-0": {
+        "choices": [
+            { "node": "void0-+", "text": "One shall move upward" },
+            { "node": "void0--", "text": "One shall move downward" },
+            { "node": "void000", "text": "One shall move northward" },
+            { "node": "void+-0", "text": "One shall move eastward" },
+            { "node": "void--0", "text": "One shall move westward" }
+        ],
+        "title": "One is in the southern heptacosant."
+    },
+    "void0-+": {
+        "choices": [
+            { "node": "void0-0", "text": "One shall move downward" },
+            { "node": "void00+", "text": "One shall move northward" },
+            { "node": "void+-+", "text": "One shall move eastward" },
+            { "node": "void--+", "text": "One shall move westward" }
+        ],
+        "title": "One is in the upper-southern heptacosant."
+    },
+    "void00-": {
+        "choices": [
+            { "node": "void000", "text": "One shall move upward" },
+            { "node": "void0+-", "text": "One shall move northward" },
+            { "node": "void0--", "text": "One shall move southward" },
+            { "node": "void+0-", "text": "One shall move eastward" },
+            { "node": "void-0-", "text": "One shall move westward" }
+        ],
+        "title": "One is in the lower-central heptacosant."
+    },
+    "void000": {
+        "choices": [
+            { "node": "void00+", "text": "One shall move upward" },
+            { "node": "void00-", "text": "One shall move downward" },
+            { "node": "void0+0", "text": "One shall move northward" },
+            { "node": "void0-0", "text": "One shall move southward" },
+            { "node": "void+00", "text": "One shall move eastward" },
+            { "node": "void-00", "text": "One shall move westward" }
+        ],
+        "title": "One is in the central heptacosant."
+    },
+    "void00+": {
+        "choices": [
+            { "node": "void000", "text": "One shall move downward" },
+            { "node": "void0++", "text": "One shall move northward" },
+            { "node": "void0-+", "text": "One shall move southward" },
+            { "node": "void+0+", "text": "One shall move eastward" },
+            { "node": "void-0+", "text": "One shall move westward" }
+        ],
+        "title": "One is in the upper-central heptacosant."
+    },
+    "void0+-": {
+        "choices": [
+            { "node": "void0+0", "text": "One shall move upward" },
+            { "node": "void00-", "text": "One shall move southward" },
+            { "node": "void++-", "text": "One shall move eastward" },
+            { "node": "void-+-", "text": "One shall move westward" }
+        ],
+        "title": "One is in the lower-northern heptacosant."
+    },
+    "void0+0": {
+        "choices": [
+            { "node": "void0++", "text": "One shall move upward" },
+            { "node": "void0+-", "text": "One shall move downward" },
+            { "node": "void000", "text": "One shall move southward" },
+            { "node": "void++0", "text": "One shall move eastward" },
+            { "node": "void-+0", "text": "One shall move westward" }
+        ],
+        "title": "One is in the northern heptacosant."
+    },
+    "void0++": {
+        "choices": [
+            { "node": "void0+0", "text": "One shall move downward" },
+            { "node": "void00+", "text": "One shall move southward" },
+            { "node": "void+++", "text": "One shall move eastward" },
+            { "node": "void-++", "text": "One shall move westward" }
+        ],
+        "title": "One is in the upper-northern heptacosant."
+    },
+    "void+--": {
+        "choices": [
+            { "node": "void+-0", "text": "One shall move upward" },
+            { "node": "void+0-", "text": "One shall move northward" },
+            { "node": "void0--", "text": "One shall move westward" }
+        ],
+        "title": "One is in the lower-southeastern heptacosant."
+    },
+    "void+-0": {
+        "choices": [
+            { "node": "void+-+", "text": "One shall move upward" },
+            { "node": "void+--", "text": "One shall move downward" },
+            { "node": "void+00", "text": "One shall move northward" },
+            { "node": "void0-0", "text": "One shall move westward" }
+        ],
+        "title": "One is in the southeastern heptacosant."
+    },
+    "void+-+": {
+        "choices": [
+            { "node": "void+-0", "text": "One shall move downward" },
+            { "node": "void+0+", "text": "One shall move northward" },
+            { "node": "void0-+", "text": "One shall move westward" }
+        ],
+        "title": "One is in the upper-southeastern heptacosant."
+    },
+    "void+0-": {
+        "choices": [
+            { "node": "void+00", "text": "One shall move upward" },
+            { "node": "void++-", "text": "One shall move northward" },
+            { "node": "void+--", "text": "One shall move southward" },
+            { "node": "void00-", "text": "One shall move westward" }
+        ],
+        "title": "One is in the lower-eastern heptacosant."
+    },
+    "void+00": {
+        "choices": [
+            { "node": "void+0+", "text": "One shall move upward" },
+            { "node": "void+0-", "text": "One shall move downward" },
+            { "node": "vood++0", "text": "One shall move northward" },
+            { "node": "void+-0", "text": "One shall move southward" },
+            { "node": "void000", "text": "One shall move westward" }
+        ],
+        "title": "One is in the eastern heptacosant."
+    },
+    "void+0+": {
+        "choices": [
+            { "node": "void+00", "text": "One shall move downward" },
+            { "node": "void+++", "text": "One shall move northward" },
+            { "node": "void+-+", "text": "One shall move southward" },
+            { "node": "void00+", "text": "One shall move westward" }
+        ],
+        "title": "One is in the upper-eastern heptacosant."
+    },
+    "void++-": {
+        "choices": [
+            { "node": "void++0", "text": "One shall move upward" },
+            { "node": "void+0-", "text": "One shall move southward" },
+            { "node": "void0+-", "text": "One shall move westward" }
+        ],
+        "title": "One is in the lower-northeastern heptacosant."
+    },
+    "void++0": {
+        "choices": [
+            { "node": "void+++", "text": "One shall move upward" },
+            { "node": "void++-", "text": "One shall move downward" },
+            { "node": "void+00", "text": "One shall move southward" },
+            { "node": "void0+0", "text": "One shall move westward" }
+        ],
+        "title": "One is in the northeastern heptacosant."
+    },
+    "void+++": {
+        "choices": [
+            { "node": "void++0", "text": "One shall move downward" },
+            { "node": "void+0+", "text": "One shall move southward" },
+            { "node": "void0++", "text": "One shall move westward" }
+        ],
+        "title": "One is in the upper-northeastern heptacosant."
     },
 
     "lose": {
