@@ -62,8 +62,7 @@ class Node:
                         if node is None:
                             return True
                         else:
-                            retry = node.run(exit_input=exit_input)
-                            if not retry:
+                            if not (retry := node.run(exit_input=exit_input)):
                                 return False
                     print(end="Invalid input. ")
 
@@ -75,8 +74,7 @@ class Node:
                 if node is None:
                     return True
                 else:
-                    retry = node.run(exit_input=exit_input)
-                    if not retry:
+                    if not (retry := node.run(exit_input=exit_input)):
                         return False
 
             else:
@@ -164,7 +162,7 @@ def parse_node_data(json_data: dict[str, NodeData]) -> dict[str, Node]:
         nodes[k] = node
 
     for cb in callbacks:
-        _ = cb()
+        cb()
 
     return nodes
 
