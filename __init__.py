@@ -186,8 +186,23 @@ def debug_console(nodes: dict[str, Node], password: str = "") -> bool:
         except KeyboardInterrupt:
             return True
 
-    # TODO: features
-    print("!!! TODO debug console !!!")
+    while True:
+        print("Debug console options:")
+        print("1) Go to node...")
+        print("-) exit")
+
+        inp = input("Option: ")
+        if inp == "-":
+            break
+        elif inp.isnumeric():
+            match int(inp):
+                case 1:
+                    name = input("Node: ")
+                    node = nodes.get(name)
+                    if node is not None:
+                        _ = node.run()
+                case _:
+                    print("Invalid option")
     return True
 
 
