@@ -56,7 +56,7 @@ class Node:
                     if inp == exit_input:
                         return False
                     if inp.lower() == "xyzzy":
-                        return debug_console(self)
+                        return debug_console(nodes)
                     if inp.isnumeric() and 1 <= int(inp) <= len(self.choices):
                         node = self.choices[int(inp) - 1].node
                         if node is None:
@@ -69,7 +69,7 @@ class Node:
             elif len(self.choices):
                 inp = input(self.choices[0].text)
                 if inp == "xyzzy":
-                    return debug_console(self)
+                    return debug_console(nodes)
                 node = self.choices[0].node
                 if node is None:
                     return True
@@ -167,7 +167,7 @@ def parse_node_data(json_data: dict[str, NodeData]) -> dict[str, Node]:
     return nodes
 
 
-def debug_console(node: Node, password: str = "") -> bool:
+def debug_console(nodes: dict[str, Node], password: str = "") -> bool:
     while True:
         if (
             hashlib.sha3_512(bytes(password, "utf-8")).hexdigest()
