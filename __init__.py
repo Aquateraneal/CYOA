@@ -188,21 +188,20 @@ def debug_console(nodes: dict[str, Node], password: str = "") -> bool:
 
     while True:
         print("Debug console options:")
-        print("1) Go to node...")
-        print("-) exit")
+        print("* Go to node...")
+        print("* eXit")
 
         inp = input("Option: ")
-        if inp == "-":
-            break
-        elif inp.isnumeric():
-            match int(inp):
-                case 1:
-                    name = input("Node: ")
-                    node = nodes.get(name)
-                    if node is not None:
-                        _ = node.run()
-                case _:
-                    print("Invalid option")
+        match inp.upper():
+            case "G":
+                name = input("Node: ")
+                node = nodes.get(name)
+                if node is not None:
+                    _ = node.run()
+            case "X":
+                break
+            case _:
+                print("Invalid option")
     return True
 
 
